@@ -1,0 +1,7 @@
+C:\Users\vijayv\Desktop\AzureDemos\WeatherAPI\WeatherAPI\obj\Release\netcoreapp3.1\PubTmp\Out\WeatherAPI.exe
+C:\Users\vijayv\Desktop\AzureDemos\WeatherAPI\WeatherAPI\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\vijayv\Desktop\AzureDemos\WeatherAPI\WeatherAPI\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\vijayv\Desktop\AzureDemos\WeatherAPI\WeatherAPI\obj\Release\netcoreapp3.1\PubTmp\Out\WeatherAPI.dll
+C:\Users\vijayv\Desktop\AzureDemos\WeatherAPI\WeatherAPI\obj\Release\netcoreapp3.1\PubTmp\Out\WeatherAPI.deps.json
+C:\Users\vijayv\Desktop\AzureDemos\WeatherAPI\WeatherAPI\obj\Release\netcoreapp3.1\PubTmp\Out\WeatherAPI.runtimeconfig.json
+C:\Users\vijayv\Desktop\AzureDemos\WeatherAPI\WeatherAPI\obj\Release\netcoreapp3.1\PubTmp\Out\WeatherAPI.pdb

@@ -1,0 +1,248 @@
+{
+  "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20210818100125",
+  "name": "CreateVm-MicrosoftWindowsServer.WindowsServer-201-20210818100125",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourcegroups/vm-rg/providers/Microsoft.Compute/virtualMachines/testvm",
+    "marketplaceItemId": "Microsoft.WindowsServer2019Datacenter-ARM",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "645436456305541109",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "networkInterfaceName": {
+        "type": "String",
+        "value": "testvm241"
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "testvm-nsg"
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "RDP",
+            "properties": {
+              "priority": 300,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "3389"
+            }
+          },
+          {
+            "name": "HTTPS",
+            "properties": {
+              "priority": 320,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "443"
+            }
+          },
+          {
+            "name": "HTTP",
+            "properties": {
+              "priority": 340,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "80"
+            }
+          }
+        ]
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "default"
+      },
+      "virtualNetworkId": {
+        "type": "String",
+        "value": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/virtualNetworks/vm-rg-vnet"
+      },
+      "publicIpAddressName": {
+        "type": "String",
+        "value": "testvm-ip"
+      },
+      "publicIpAddressType": {
+        "type": "String",
+        "value": "Dynamic"
+      },
+      "publicIpAddressSku": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "testvm"
+      },
+      "virtualMachineComputerName": {
+        "type": "String",
+        "value": "testvm"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "vm-rg"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "Premium_LRS"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_B1ms"
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "vmadmin"
+      },
+      "adminPassword": {
+        "type": "SecureString"
+      },
+      "patchMode": {
+        "type": "String",
+        "value": "AutomaticByOS"
+      },
+      "enableHotpatching": {
+        "type": "Bool",
+        "value": false
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2021-08-18T04:41:20.2429583Z",
+    "duration": "PT5M49.3171607S",
+    "correlationId": "e2a23fd2-f13a-4a08-aa27-62dc9a8a9b74",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "publicIpAddresses",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/networkSecurityGroups/testvm-nsg",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "testvm-nsg"
+          },
+          {
+            "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/publicIpAddresses/testvm-ip",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "testvm-ip"
+          }
+        ],
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/networkInterfaces/testvm241",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "testvm241"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/networkInterfaces/testvm241",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "testvm241"
+          }
+        ],
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Compute/virtualMachines/testvm",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "testvm"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Compute/virtualMachines/testvm",
+            "resourceType": "Microsoft.Compute/virtualMachines",
+            "resourceName": "testvm"
+          }
+        ],
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/Microsoft.CustomScriptExtension-20210818100423",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "Microsoft.CustomScriptExtension-20210818100423"
+      }
+    ],
+    "outputs": {
+      "adminUsername": {
+        "type": "String",
+        "value": "vmadmin"
+      }
+    },
+    "outputResources": [
+      {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Compute/virtualMachines/testvm"
+      },
+      {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Compute/virtualMachines/testvm/extensions/CustomScriptExtension"
+      },
+      {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/networkInterfaces/testvm241"
+      },
+      {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/networkSecurityGroups/testvm-nsg"
+      },
+      {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/publicIpAddresses/testvm-ip"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

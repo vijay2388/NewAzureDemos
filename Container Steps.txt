@@ -1,0 +1,87 @@
+Steps to Install Docker , Create a Local Image and Pushing it to ACR
+--------------------------------------------------------------------
+1)Create a Linux(Ubuntu) VM in Azure Cloud 
+
+2)Login to Linux VM using ssh client (Mobaxterm or Putty)
+
+3)Run the following command 
+
+#Login as a Super User
+
+sudo su
+
+#Updating the Linux
+apt-get update
+
+#Installing Docker 
+apt install docker.io
+
+#Checking Docker Version 
+docker --version 
+docker version 
+
+#Create Containers 
+
+docker run hello-world
+
+#Listing all the containers 
+docker ps ---> active containers
+
+docker ps -a ----> All Contaoiners (Active and Inactive)
+
+#Listing all the images 
+docker image ls 
+
+#Stoping a conatiner 
+docker stop containername or first-four characters of container id 
+
+#Deleting a Container
+docker rm containername or first-four characters of conatiner id
+
+4)Creating a image
+
+#download the project from github repo
+git clone https://github.com/vijay2388/dockerdemoapp.git
+
+#change directory 
+cd dockerdemoapp 
+
+#creating a image 
+docker build -t myappimage .
+
+#creating a container 
+docker run -d -p 80:80 myapppimage
+
+5)Pushing the image to Azure Container Registry
+
+#installing azure cli 
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+#log into azure cli
+az cli 
+
+follow the instruction
+
+#creata a azure container registry instance
+Visit Azure Portal 
+Click on Create Resource 
+Search for Container Registry
+Click on Create 
+Enter the following details 
+	Subscription - Select Default Subscription
+	Resource Group - Select Resource Group
+	Registry Name - Unique name 
+	Location - Select Location 
+	SKU - Basic
+	Click in Review + Create and Click on Create 
+
+#use the following command login to azure cli and azure acr
+az login
+
+az acr login --name registry-url
+
+#change the image tag
+docker tag sourceimagename registry-url/imagename 
+
+docker push registry-url/imagename
+

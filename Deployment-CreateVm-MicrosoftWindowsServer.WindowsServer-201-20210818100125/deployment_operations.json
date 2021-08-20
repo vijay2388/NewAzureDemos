@@ -1,0 +1,104 @@
+[
+  {
+    "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20210818100125/operations/803571CEC92FA2C5",
+    "operationId": "803571CEC92FA2C5",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-08-18T04:41:20.113752Z",
+      "duration": "PT5M32.9865657S",
+      "trackingId": "831ddb17-949e-4f3a-8774-6289b3cdad70",
+      "serviceRequestId": "982ad5ba-a4e2-43cb-a605-5d6cf34403d7",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/Microsoft.CustomScriptExtension-20210818100423",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "Microsoft.CustomScriptExtension-20210818100423"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20210818100125/operations/8722D0CBCD8592F7",
+    "operationId": "8722D0CBCD8592F7",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-08-18T04:36:26.9250979Z",
+      "duration": "PT39.7979116S",
+      "trackingId": "7f3a2d13-2b77-4723-b49a-2b019530947a",
+      "serviceRequestId": "c08d5b8d-7b98-400d-86e9-e1051aa9df61",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Compute/virtualMachines/testvm",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "testvm"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20210818100125/operations/0047AC6F348CDE19",
+    "operationId": "0047AC6F348CDE19",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-08-18T04:35:54.5143469Z",
+      "duration": "PT7.3871606S",
+      "trackingId": "a519ff46-58fa-4779-97e2-335e4326f853",
+      "serviceRequestId": "3bb791a1-0e22-4996-b066-09f12f7c70ce",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/networkInterfaces/testvm241",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "testvm241"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20210818100125/operations/C52FE0C6AE43BDFD",
+    "operationId": "C52FE0C6AE43BDFD",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-08-18T04:35:45.7187249Z",
+      "duration": "PT9.8839832S",
+      "trackingId": "4be1d473-65e8-4c9f-b339-a326921f47db",
+      "serviceRequestId": "19d92c0f-d7f7-4c68-93d6-a854d655a695",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/publicIpAddresses/testvm-ip",
+        "resourceType": "Microsoft.Network/publicIpAddresses",
+        "resourceName": "testvm-ip"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20210818100125/operations/4FE2D0F48053F302",
+    "operationId": "4FE2D0F48053F302",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-08-18T04:35:47.0895548Z",
+      "duration": "PT11.2548131S",
+      "trackingId": "88d73213-914e-402e-98e8-21a99e06a4b7",
+      "serviceRequestId": "dc615d93-38ae-4776-bd81-65bf76df569f",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Network/networkSecurityGroups/testvm-nsg",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "testvm-nsg"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/9dc55bd1-23ee-43f6-8eb2-3fee266a0677/resourceGroups/vm-rg/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20210818100125/operations/08585723455545518650",
+    "operationId": "08585723455545518650",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-08-18T04:41:20.2173166Z",
+      "duration": "PT5M33.0901303S",
+      "trackingId": "6f246b94-1989-477a-aeea-58b151f93f2d",
+      "statusCode": "OK"
+    }
+  }
+]
