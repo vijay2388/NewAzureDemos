@@ -7,10 +7,10 @@ namespace ServiceBusDemo
     class Program
     {
         // connection string to your Service Bus namespace
-        static string connectionString = "<NAMESPACE CONNECTION STRING>";
+        static string connectionString = "Endpoint=sb://testbusnamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=fKXtb2rgtBulNrDqudZNJ0t8VdjJ3YBgIy9JL+IkGzk=";
 
         // name of your Service Bus topic
-        static string topicName = "<TOPIC NAME>";
+        static string topicName = "topic1";
 
         // the client that owns the connection and can be used to create senders and receivers
         static ServiceBusClient client;

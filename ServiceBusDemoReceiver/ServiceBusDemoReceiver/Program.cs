@@ -7,13 +7,13 @@ namespace ServiceBusDemoReceiver
     class Program
     {
         // connection string to your Service Bus namespace
-        static string connectionString = "<NAMESPACE CONNECTION STRING>";
+        static string connectionString = "Endpoint=sb://testbusnamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=fKXtb2rgtBulNrDqudZNJ0t8VdjJ3YBgIy9JL+IkGzk=";
 
         // name of the Service Bus topic
-        static string topicName = "<SERVICE BUS TOPIC NAME>";
+        static string topicName = "topic1";
 
         // name of the subscription to the topic
-        static string subscriptionName = "<SERVICE BUS - TOPIC SUBSCRIPTION NAME>";
+        static string subscriptionName = "s1";
 
         // the client that owns the connection and can be used to create senders and receivers
         static ServiceBusClient client;

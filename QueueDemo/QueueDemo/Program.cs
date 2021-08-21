@@ -9,21 +9,26 @@ namespace QueueDemo
     {
         static async Task Main(string[] args)
         {
-            string connectionString = "";
+            string connectionString = "DefaultEndpointsProtocol=https;AccountName=logicstorageacc2021;AccountKey=ja26nqkxf+tthmVqFsGJM3Ij7aP2XT7Eao2c6jBh8eJOB+BVtGsQk5siIMml+K7aHlZ0G5y31qM2kWNg8oRCig==;EndpointSuffix=core.windows.net";
 
             QueueClient queue = new QueueClient(connectionString, "mystoragequeue");
 
-            if (args.Length > 0)
-            {
-                string value = String.Join(" ", args);
-                await InsertMessageAsync(queue, value);
-                Console.WriteLine($"Sent: {value}");
-            }
-            else
-            {
-                string value = await RetrieveNextMessageAsync(queue);
-                Console.WriteLine($"Received: {value}");
-            }
+            await InsertMessageAsync(queue, "message1");
+            await InsertMessageAsync(queue, "message2");
+            await InsertMessageAsync(queue, "message3");
+            await InsertMessageAsync(queue, "message4");
+
+            //if (args.Length > 0)
+            //{
+            //    string value = String.Join(" ", args);
+            //    await InsertMessageAsync(queue, value);
+            //    Console.WriteLine($"Sent: {value}");
+            //}
+            //else
+            //{
+            //    string value = await RetrieveNextMessageAsync(queue);
+            //    Console.WriteLine($"Received: {value}");
+            //}
 
             Console.Write("Press Enter...");
             Console.ReadLine();
